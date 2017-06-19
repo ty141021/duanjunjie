@@ -1,0 +1,122 @@
+@import url("reset.css");
+.w950, .header, .nav1, .nav2, .main {
+  width: 950px;
+  margin: 0 auto; }
+
+.header {
+  height: 46px; }
+  .header h1 {
+    float: left;
+    margin-top: 7px; }
+  .header ul {
+    float: left; }
+    .header ul li {
+      _margin-top: 15px;
+      float: left;
+      line-height: 46px;
+      font-size: 14px;
+      margin-left: 18px;
+      _margin-left: 9px; }
+      .header ul li a {
+        margin-left: 8px; }
+
+.nav1 {
+  background: #105495;
+  height: 41px; }
+  .nav1 ul {
+    float: left; }
+    .nav1 ul li {
+      float: left;
+      line-height: 41px;
+      color: white;
+      margin-left: 15px; }
+      .nav1 ul li.first {
+        font-size: 17px; }
+
+.nav2 {
+  height: 33px;
+  background: #f1f5f8; }
+  .nav2 ul {
+    float: left; }
+    .nav2 ul li {
+      float: left;
+      margin-top: 7px;
+      color: #015092;
+      border-right: 1px #015092 solid;
+      margin-left: 12px;
+      padding-right: 12px; }
+  .nav2 div {
+    float: right;
+    margin-top: 5px;
+    margin-right: 16px;
+    _margin-right: 8px; }
+    .nav2 div button {
+      _height: 22px; }
+    .nav2 div select {
+      margin-right: 5px; }
+
+.main {
+  height: 490px;
+  margin-top: 16px; }
+  .main .left {
+    float: left;
+    width: 302px; }
+    .main .left h2 {
+      margin-top: 33px;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 2px black solid; }
+    .main .left h3 {
+      line-height: 46px; }
+    .main .left h4 dl {
+      height: 84px; }
+      .main .left h4 dl dt {
+        float: left; }
+      .main .left h4 dl dd {
+        float: left;
+        width: 150px;
+        margin-left: 12px; }
+    .main .left .img {
+      margin-top: 18px;
+      text-align: center; }
+  .main .center {
+    float: left;
+    width: 360px;
+    margin-left: 18px; }
+    .main .center h1 {
+      text-align: center;
+      color: #0c4c8a;
+      height: 70px;
+      border-bottom: 1px silver dashed; }
+      .main .center h1 b {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 40px; }
+    .main .center h2 {
+      height: 128px;
+      margin-top: 10px;
+      font-size: 14px;
+      border-bottom: 1px silver dashed; }
+      .main .center h2 ul li {
+        line-height: 24px; }
+        .main .center h2 ul li a {
+          background: url(../img/images/ads_03.jpg) no-repeat left center;
+          padding-left: 20px;
+          color: #0c4c8a; }
+  .main .right {
+    width: 250px;
+    float: right; }
+    .main .right h2 {
+      margin-top: 10px;
+      font-size: 18px;
+      margin-bottom: 10px; }
+    .main .right h3 {
+      margin-left: 10px; }
+    .main .right ul li {
+      margin-left: 8px;
+      line-height: 24px; }
+    .main .right ul a {
+      background: url(../img/images/ads_03.jpg) no-repeat left center;
+      padding-left: 20px; }
+
+/*# sourceMappingURL=style.css.map */

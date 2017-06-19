@@ -1,0 +1,200 @@
+@import url("reset.css");
+
+@mixin whb($w,$h,$b){
+    width:$w ;
+    height: $h;
+    background: $b;
+}
+
+@mixin f($f:left){
+    float: $f;
+}
+
+.w950{
+    width: 950px;
+    margin: 0 auto;
+}
+//头部
+.header{
+    @extend .w950;
+    height: 46px;
+   
+    h1{
+        @include f;
+        margin-top: 7px;
+    }
+    ul{
+        @include f;
+        
+        
+        li{
+            
+            _margin-top:15px;
+            @include f; 
+            line-height: 46px;
+            font-size: 14px;
+            margin-left: 18px;
+            _margin-left: 9px;
+            a{
+                margin-left: 8px;
+            }
+        }
+    }
+}
+//导航1
+.nav1{
+    @extend .w950;
+       background: #105495;
+       height: 41px;
+       ul{
+           @include f;
+           li{
+              @include f; 
+              line-height: 41px;
+              color: white;
+              margin-left: 15px;
+              &.first{
+                  font-size: 17px;                 
+              }
+           }
+       }
+    
+}
+//导航2
+.nav2{
+    @extend .w950;
+    height: 33px;
+    background: #f1f5f8;
+    ul{
+        @include f;
+        li{
+            @include f;
+            margin-top: 7px;
+            color: #015092;
+            border-right: 1px #015092 solid;
+            margin-left: 12px;
+            padding-right: 12px;
+        }
+    }
+    div{
+       @include f(right); 
+       margin-top: 5px;
+       margin-right: 16px;
+       _margin-right: 8px;
+       button{
+           _height:22px;
+       }
+      select{
+          margin-right: 5px;
+      }
+    }
+}
+
+.main{
+    @extend .w950;
+    height: 490px;
+   
+    margin-top: 16px;
+    .left{
+       @include f; 
+       width: 302px;
+       h2{
+           margin-top: 33px;
+           font-size: 18px;
+           font-weight: bold;
+           border-bottom: 2px black solid;
+       }
+       h3{
+           line-height: 46px;        
+       }
+       h4{
+           dl{
+               height: 84px;
+               dt{
+                   @include f; 
+               }
+               dd{
+                   @include f; 
+                   width: 150px;
+                   margin-left: 12px;
+               }
+           }
+       }
+       .img{
+           margin-top: 18px;
+           text-align: center;
+          
+       }
+       
+    }
+    
+    
+    
+    
+    
+    
+    .center{
+       @include f;
+       width: 360px; 
+       margin-left: 18px;
+      h1{
+          text-align: center;
+          color: #0c4c8a;
+          height: 70px;
+          border-bottom: 1px silver dashed;
+         b{
+             font-size: 18px;
+             font-weight: bold;
+             line-height: 40px;
+         } 
+      }
+      h2{
+          height: 128px;
+           margin-top: 10px;
+           font-size: 14px;
+         border-bottom: 1px silver dashed; 
+         ul{
+            
+             li{
+                 line-height: 24px;
+                 a{
+                     background: url(../img/images/ads_03.jpg) no-repeat left center;
+                     padding-left: 20px;
+                     color: #0c4c8a;
+                 }
+             }
+         }
+      }
+    }
+    
+    
+    
+    
+    
+    
+    .right{
+        width: 250px;
+       @include f(right);
+        
+        h2{
+            margin-top: 10px;
+                            
+            font-size: 18px;      
+            margin-bottom: 10px;  
+        }
+        h3{
+            margin-left: 10px;
+        }
+        ul{
+            li{
+                margin-left: 8px;
+                line-height: 24px;
+            }
+             a{
+                     background: url(../img/images/ads_03.jpg) no-repeat left center;
+                     padding-left: 20px;
+                  
+                 }
+        }
+    }
+}
